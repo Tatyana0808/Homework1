@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +16,9 @@
   
   .header {
     background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 1024px;
   }
   
@@ -52,6 +56,13 @@
     font-style: inherit;
     font-weight: 400;
     line-height: normal;
+    transition: 0.8s ease;
+  }
+
+  .header__top-button:hover {
+    border: 1px solid #EB443F;
+    background: #EB443F;
+    transition: 0.8s ease;
   }
   
   .footer {
@@ -63,6 +74,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
   
   .footer__content {
@@ -90,3 +102,55 @@
     font-weight: 600;
     line-height: 32px; /* 133.333% */
   }/*# sourceMappingURL=style.css.map */
+
+  /* Адаптив планшет */
+@media (max-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__top-h1 {
+    text-align: center;
+  }
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* Адаптив мобильная версия */
+@media (max-width: 767px) {
+  .header {
+    background-image: url(/hw-3/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 735px;
+  }
+  .header__top-h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 238px;
+  }
+  .header__text {
+    font-size: 14px;
+    line-height: 22px; /* 157.143% */
+    max-width: 343px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .item-text {
+    top: 218px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  .item-text {
+    top: 183px;
+  }
+}/*# sourceMappingURL=style.css.map */
