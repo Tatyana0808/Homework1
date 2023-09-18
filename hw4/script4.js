@@ -35,8 +35,8 @@ for (key in obj) {
 }
 
 //Задание 5
-n = 1000;
-num = 0;
+let n = 1000;
+let num = 0;
 while (n>=50)
 {
 n=n/2;
