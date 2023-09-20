@@ -127,21 +127,21 @@ const circle2={
 
   const showSeason = (a) => {
     if (a === 1 || a === 2 || a === 12) {
-      return 'Зима';
+      alert ('Зима');
   
     } else if (a === 3 || a === 4 || a === 5) {
-      return 'Весна';
+      alert ('Весна');
     }
   
     else if (a === 6 || a === 7 || a === 8) {
-      return 'Лето';
+      alert ('Лето');
     }
   
     else if (a === 9 || a === 10 || a === 11) {
-      return 'Осень';
+      alert ('Осень');
   
     } else {
-      return 'Вы ввели что-то не то';
+      alert ('Вы ввели что-то не то');
     }
   }
   
