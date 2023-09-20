@@ -88,7 +88,7 @@
   .footer__content-item {
     position: relative;
     max-width: 379px;
-    height: 300px;
+    
     transition: 0.5s ease;
   }
   .footer__content-item:hover {
