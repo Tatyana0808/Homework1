@@ -52,10 +52,11 @@ function Userage(question){
   if (age > 0 && age <= 12) {
     console.log('Привет друг');
   } 
-  else if (age < 0);{ 
+  else if (age < 0) { 
     console.log('Вы ввели неправильное значение');
   }
-  else (age >= 13);{
+  else {
+    (age >= 13);
   console.log('Добро пожаловать');
   }
    
