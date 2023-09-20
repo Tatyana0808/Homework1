@@ -69,6 +69,31 @@ Userage('Сколько вам лет?');
 
 
 
+//Задание №5
+
+const checkNumber = (a,b) => {
+	if (isNaN(a) || isNaN(b)) {
+		return 'Одно или оба значения не являются числом';
+	} else {
+		return a * b;
+	}
+}
+
+checkNumber(4,4);
+
+//Задание №6
+const exponentiation = (a) => {
+	if (isNaN(a)) {
+		alert('Переданный параметр не является числом');
+	} else {
+		alert(`${a} в кубе равняется ${a ** 3}`);
+	}
+}
+
+exponentiation(prompt('Введите число'));
+
+
+
 
 
 
