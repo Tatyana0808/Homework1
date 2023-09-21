@@ -104,23 +104,24 @@ function getRectangleArea() {
 function getRectanglePerimiter() {
  return this.radius * 2 * 3.14; 
 }
-const circle1={ 
+const circle1 = { 
   radius:5,
 
   getArea: getRectangleArea,
   getPerimiter: getRectanglePerimiter,
 }
 
-const circle2={ 
+const circle2 = { 
   radius:7,
 
   getArea: getRectangleArea,
   getPerimiter: getRectanglePerimiter,
 }
-  console.log(circle1.getArea());
-  console.log(circle1.getPerimiter());
-  console.log(circle2.getArea());
-  console.log(circle2.getPerimiter())
+ console.log(`Площадь круга 1 равна ${circle1.getArea()}`);
+ console.log(`Периметр круга 1 равен ${circle1.getPerimiter()}`);
+ console.log(`Площадь круга 2 равна ${circle2.getArea()}`);
+ console.log(`Периметр круга 2 равен ${circle2.getPerimiter()}`);
+
   
 
   // Задание 8
