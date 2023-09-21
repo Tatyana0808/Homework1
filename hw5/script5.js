@@ -125,7 +125,8 @@ const circle2={
 
   // Задание 8
 
-  const showSeason = (a) => {
+  const showSeason = () => {
+    let a = Number(prompt('Введите значение от 1 до 12'));
     if (a === 1 || a === 2 || a === 12) {
       alert ('Зима');
   
@@ -145,5 +146,5 @@ const circle2={
     }
   }
   
-  showSeason(Number(prompt('Введите значение от 1 до 12')));
+   
 
