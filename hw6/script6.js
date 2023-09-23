@@ -86,9 +86,7 @@ sort
 
 let numb = [9, 8, 7, 'a', 6, 5];
 numb = numb.sort();
-
 console.log(numb);
-
 console.log(numb.pop());
 console.log(numb);
 
@@ -103,7 +101,17 @@ console.log(numb);
 //let = [9, 8, 7, 6, 5];
 //let 
 
-
+let guessNumber = [9, 8, 7, 6, 5];
+let result = 0;
+let enterNumber = Number(prompt('Введите число любое'));
+for (let i = 0; i < guessNumber.length; i++) {
+	if (enterNumber === guessNumber[i]) {
+		console.log('угадал');
+		break
+	} else {
+		console.log('НЕ угадал');
+	}
+}
 
 
 
