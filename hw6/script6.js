@@ -144,6 +144,11 @@ console.log(word.join(''));
 .
 */
 
+let sortArr = [
+	[1, 2, 3],
+	[4, 5, 6]
+];
+console.log(sortArr.flat());
 
 
 
