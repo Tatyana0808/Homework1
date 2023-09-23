@@ -50,8 +50,8 @@ join
 let arr = [];
 for (let i = 0; i < 3; i++) {
   arr[i] = []; //создали подмассив
-  for (let j = 0; j < 3;) {
-    arr[i].push(j + 1);// заполняем подиассив числами
+  for (let j = 0; j < 3; j++) {
+    arr[i].push(1);// заполняем подмассив числами
   }
 }
 console.log(arr);
