@@ -191,13 +191,8 @@ console.log(sqrResult);
 
 getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']); // [5, 0, 4, 19, 5]
 */
-
-
-
-
-
-
-
+const getLengthWords = quanity => quanity.map(str => str.length);
+console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
 
 
 /*Задание 13
@@ -209,3 +204,9 @@ function filterPositive(array) {
 
 filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]*/
+
+function filterPositive(array) {
+	return array.filter(item => item < 0)
+}
+filterPositive([-1, 0, 5, -10, 56]); 
+filterPositive([-25, 25, 0, -1000, -2]);
