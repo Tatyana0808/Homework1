@@ -165,12 +165,15 @@ i + 1
 . Обратите внимание, что у последнего элемента нет следующего.
 */
 
-
-
-
-
-
-
+let array = [];
+let sum = 1;
+for (let i = 1; i <= 10; i++) {
+	array.push(i);
+}
+for (let j = 1; j < array.length; j++) {
+	sum += array[j];
+	console.log(sum);
+}
 
 
 /*Задание 11
