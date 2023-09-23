@@ -108,7 +108,11 @@ console.log(numb);
 'fedcba'
 .*/
 
-
+let wordse = 'abcdef';
+let word = wordse.split('');
+console.log(word);
+console.log(word.reverse());
+console.log(word.join(''));
 
 
 
