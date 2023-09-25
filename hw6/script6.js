@@ -98,20 +98,14 @@ console.log(numb);
 
 Попросить пользователя угадать число (использовать prompt). Если значение, которое ввёл пользователь, есть в массиве, вывести в alert «Угадал», в противном случае вывести «Не угадал».
 */
-//let = [9, 8, 7, 6, 5];
-//let 
-
 let guessNumber = [9, 8, 7, 6, 5];
-let result = 0;
-let enterNumber = Number(prompt('Введите число любое'));
-for (let i = 0; i < guessNumber.length; i++) {
-	if (enterNumber === guessNumber[i]) {
-		console.log('угадал');
-		break
-	} else {
-		console.log('НЕ угадал');
-	}
+let checkNumber = guessNumber.includes(Number(prompt('Введите число')));
+if (checkNumber === true) {
+	alert('угадал');
+ } else {
+	alert('не угадал');
 }
+
 
 
 
@@ -165,23 +159,30 @@ i + 1
 . Обратите внимание, что у последнего элемента нет следующего.
 */
 
-let array = [];
-let sum = 1;
-for (let i = 1; i <= 10; i++) {
-	array.push(i);
+function getRandomInt(max) {
+	return Math.floor(Math.random() * max);
 }
-for (let j = 1; j < array.length; j++) {
-	sum += array[j];
-	console.log(sum);
+
+let array = [];
+let sum = 0;
+for (let i = 0; i < 10; i++) {
+	array.push(getRandomInt(10));
+}
+console.log(array);
+
+for (let i = 0; i < array.length - 1; i++) {
+
+	const sum = array[i] + array[i + 1];
+	console.log("Сумма", array[i], "и", array[i + 1], "равна",sum);
 }
 
 
 /*Задание 11
 Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел.
 */
-let arrSqr = [1, 2, 3, 4, 5];
-let sqrResult = arrSqr.map(item => item**2);
-console.log(sqrResult);
+let arrNumbers = [1, 2, 3, 4, 5];
+let numbersResult = arrNumbers.map(item => item**2);
+console.log(numbersResult);
 
 
 /*Задание 12
