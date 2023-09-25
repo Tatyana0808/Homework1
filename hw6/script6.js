@@ -161,22 +161,16 @@ i + 1
 . Обратите внимание, что у последнего элемента нет следующего.
 */
 
-function getRandomInt(max) {
-	return Math.floor(Math.random() * max);
-}
 
-let array = [];
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
-for (let i = 0; i < 10; i++) {
-	array.push(getRandomInt(10));
-}
-console.log(array);
+for (let i = 1; i < array.length; i++) {
+	sum = array[i] + array[i - 1];
 
-for (let i = 0; i < array.length - 1; i++) {
-
-	const sum = array[i] + array[i + 1];
-	console.log("Сумма", array[i], "и", array[i + 1], "равна",sum);
+console.log(sum);
 }
+
 
 
 /*Задание 11
