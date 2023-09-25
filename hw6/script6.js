@@ -91,6 +91,8 @@ console.log(numb.pop());
 console.log(numb);
 
 
+
+
 /*Задание 7
 Дан массив: 
 [9, 8, 7, 6, 5]
