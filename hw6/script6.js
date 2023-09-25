@@ -163,13 +163,15 @@ i + 1
 
 
 
-/*let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let sum = 0;
-for (let i = 1; i < array.length; i++) {
-	sum = array[i] + array[i - 1];
-
-console.log(sum);
-}*/
+let array = [];
+let sum = 1;
+for (let i = 1; i <= 10; i++) {
+	array.push(i);
+}
+for (let j = 1; j < array.length; j++) {
+	sum += array[j];
+	console.log(sum);
+}
 
 
 
