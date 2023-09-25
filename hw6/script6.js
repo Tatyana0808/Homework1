@@ -163,13 +163,13 @@ i + 1
 
 
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+/*let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
 for (let i = 1; i < array.length; i++) {
 	sum = array[i] + array[i - 1];
 
 console.log(sum);
-}
+}*/
 
 
 
@@ -203,7 +203,8 @@ filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]*/
 
 function filterPositive(array) {
-	return array.filter(item => item < 0)
+	resalt = array.filter(item => item < 0);
 }
 filterPositive([-1, 0, 5, -10, 56]); 
 filterPositive([-25, 25, 0, -1000, -2]);
+console.log(resalt);
