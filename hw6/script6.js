@@ -206,7 +206,7 @@ filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]*/
 
 function filterPositive(array) {
 	resalt = array.filter(item => item < 0);
+	console.log(resalt);
 }
 filterPositive([-1, 0, 5, -10, 56]); 
 filterPositive([-25, 25, 0, -1000, -2]);
-console.log(resalt);
