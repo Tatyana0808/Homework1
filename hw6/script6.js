@@ -10,8 +10,9 @@
 const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] == 0) break;
-    console.log(numbers[i]);
+	console.log(numbers[i]);
+    if (numbers[i] == 10) break;
+    
 }
 
 /*Задание 2
@@ -163,15 +164,13 @@ i + 1
 
 
 
-let array = [];
-let sum = 1;
-for (let i = 1; i <= 10; i++) {
-	array.push(i);
-}
-for (let j = 1; j < array.length; j++) {
-	sum += array[j];
-	console.log(sum);
-}
+const arrayNum = [2, 3, 5, 6];
+
+for (let i = 0; i < arrayNum.length - 1; i++) {
+   
+   const sum = arrayNum[i] + arrayNum[i + 1];
+   console.log("Сумма",arrayNum[i], "и", arrayNum[i + 1], "равна",sum);
+ }
 
 
 
@@ -205,8 +204,9 @@ filterPositive([-1, 0, 5, -10, 56]); // => [-1, -10]
 filterPositive([-25, 25, 0, -1000, -2]); // => [-25, -1000, -2]*/
 
 function filterPositive(array) {
-	resalt = array.filter(item => item < 0);
-	console.log(resalt);
+	return array.filter(item => item < 0);
+	
 }
-filterPositive([-1, 0, 5, -10, 56]); 
-filterPositive([-25, 25, 0, -1000, -2]);
+console.log(filterPositive([-1, 0, 5, -10, 56])); 
+console.log(filterPositive([-25, 25, 0, -1000, -2]));
+
