@@ -157,8 +157,37 @@ console.log(`Новая дата, которая наступит через 73 
 
 Время, которое будет выведено, также хранится в объекте Date.*/
 
+let myDate = new Date();
+
+let daysList = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+let monthsList = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',  'Октябрь', 'Ноябрь', 'Декабрь'];
 
 
+let date = myDate.getDate();
+let month = monthsList[myDate.getMonth()];
+let year = myDate.getFullYear();
+let day = daysList[myDate.getDay()];
+
+let today = `${date} ${month} ${year} - это день недели ${day}`;
+
+let hour = myDate.getHours(); 
+let minute = myDate.getMinutes();
+let second = myDate.getSeconds();
+ 
+
+if (minute < 10) { // если минут будет меньше 10,
+	minute = "0" + minute; // то перед ними поставим 0
+}
+if (second < 10) { // если секунд будет меньше 10,
+	second = "0" + second; // то перед ними поставим 0
+}
+
+
+
+
+let currentTime = `Время сейчас ${hour}:${minute}:${second}`;
+
+console.log(today + ' ' + currentTime);
 
 
 
