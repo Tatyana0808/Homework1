@@ -152,7 +152,7 @@ body {
 	background-image: url(/hw7/img/gameRiddle-bg.jpg);
 	background-repeat: no-repeat;
     background-position: center;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .riddleGame__text-block {
@@ -179,6 +179,18 @@ body {
 	line-height: 32px; /* 177.778% */
 	max-width: 1200px;
 	text-align: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.footer {
+    background-color: #000915;
+    text-align: center;
+}
+.footer__text {
+	color: #FFF;
+	font-size: 12px;
+	font-weight: 400;
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
