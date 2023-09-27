@@ -57,17 +57,15 @@ console.log(Math.max(52, 53, 49, 77, 21, 32));
 /*Задание 5
 Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.*/
 
-function randomNumbers(max){
+function randomNumbers(max, min){
  
-	return Math.floor(Math.random() * max);
+	
+	let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
 }
 
-let array = [];
-let sum = 0;
-for (let i = 0; i < 10; i++) {
-	array.push(randomNumbers(10));
-}
-console.log(array);
+console.log(randomNumbers(1, 10));
+
 
 
 
