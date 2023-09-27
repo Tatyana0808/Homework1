@@ -195,3 +195,19 @@ alert();
 let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 list = list.sort(() => Math.random() - 0.5);
  */
+function gameStart() {
+    let gameArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    gameArr.sort(() => Math.random() - 0.5);
+    alert(gameArr);
+    questionFristEl = prompt('Чему равнялся первый элемент массива?');
+    questionLastEl = prompt('Чему равнялся последний элемент массива?');
+
+        if (gameArr[0].toLowerCase() === questionFristEl.toLowerCase() && gameArr[6].toLowerCase() === questionLastEl.toLowerCase()) {
+            alert('Поздравляем! Вы угадали все верно.');
+        } else if (gameArr[0].toLowerCase() != questionFristEl.toLowerCase() && gameArr[6].toLowerCase() != questionLastEl.toLowerCase()) {
+            alert('Вы ответили неверно.');
+        } else {
+            alert('Вы были близки к победе!');
+        }
+}
+
