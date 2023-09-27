@@ -90,11 +90,12 @@ function getRandomArrNumbers(number) {
     for (let i = 0; arr.length < Math.floor((number / 2)); i++) {
         arr.push(consoleRandomInt(0, number));
     }
-    console.log(arr);
+    console.log(arr)
+	
 }
 
-console.log(getRandomArrNumbers(7));
-console.log(getRandomArrNumbers(12));   
+getRandomArrNumbers(7);
+  
 
 
 
@@ -140,7 +141,7 @@ setDate()
 let currentDateNew = new Date();
 console.log(`Текущая дата ${currentDateNew}`);
 currentDateNew.setDate(currentDateNew.getDate() + 73);
-console.log(`Новая дата спустя 73 дня: ${currentDateNew}`);
+console.log(`Новая дата, которая наступит через 73 дня: ${currentDateNew}`);
 
 
 
