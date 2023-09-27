@@ -83,6 +83,20 @@ getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен
 // от 0 до 12, длина массива 12 / 2 = 6
 */
 
+function getRandomArrNumbers(number) {
+    const consoleRandomInt = (min, max) => {
+        let rand = min + Math.random() * (max + 1 - min);
+        return Math.floor(rand);
+    }
+    let arr = [];
+    for (let i = 0; arr.length < Math.floor((number / 2)); i++) {
+        arr.push(consoleRandomInt(0, number));
+    }
+    console.log(arr);
+}
+
+console.log(getRandomArrNumbers(7));
+console.log(getRandomArrNumbers(12));   
 
 
 
@@ -92,6 +106,15 @@ getRandomArrNumbers(12); // [9, 11, 10, 9, 3, 0] - массив заполнен
 Напишите функцию, которая на вход принимает 2 целых числа, а в качестве результата возвращает случайное целое число в этом диапазоне.
 */
 
+function twoNumber(a, b) {
+    const consoleRandom = (min, max) => {
+        let rand = min + Math.random() * (max + 1 - min);
+        return Math.floor(rand);
+    }
+    return consoleRandom(a, b);
+}
+
+console.log(twoNumber(5, 10));
 
 
 
