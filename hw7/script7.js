@@ -116,7 +116,10 @@ getDate()
 setDate()
 , один из методов должен быть передан в качестве параметра второму.*/
 
-//let currentDate = new Date();
+let currentDateNew = new Date();
+console.log(`Текущая дата ${currentDateNew}`);
+currentDateNew.setDate(currentDateNew.getDate() + 73);
+console.log(`Новая дата спустя 73 дня: ${currentDateNew}`);
 
 
 
