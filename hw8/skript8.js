@@ -26,16 +26,13 @@ const people = [
     { name: 'Оксана', age: 47 }
  ];
 
- people.sort(function (a, b) {
-	if (a.age > b.age) {
-    return 1;
-  }
-  if (a.age < b.age) {
-    return -1;
-  }
-  
-  return 0;
-});
+ function compareAge(a, b) {
+    return a.age - b.age;
+}
+
+
+people.sort(compareAge);
+console.log(people.sort());
 
 
 
