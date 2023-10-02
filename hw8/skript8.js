@@ -19,7 +19,7 @@ const people = [
 //  { name: 'Глеб', age: 29 },
 //  { name: 'Оксана', age: 47 }
 // ]
-const people = [
+const peopleOne = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
     { name: 'Олег', age: 7 },
@@ -31,8 +31,8 @@ const people = [
 }
 
 
-people.sort(compareAge);
-console.log(people.sort());
+peopleOne.sort(compareAge);
+console.log(peopleOne.sort());
 
 
 
@@ -86,7 +86,32 @@ const people = [
 console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 */
 
+function isPositive(Number) {
+    return Number > 0;
+}
+function isMale(person) {
+    return person.gender === 'male';
+}
+function filter(arr, callback) {
+    const filteredArray = [];
+    for (const item of arr) {
+        if (callback(item)) {
+            filteredArray.push(item);
+        }
+    }
+    return filteredArray
+}
 
+console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
+
+const people = [
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
+];
+
+console.log(filter(people, isMale));
 
 
 
