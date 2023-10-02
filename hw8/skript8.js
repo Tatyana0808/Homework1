@@ -143,8 +143,22 @@ console.log(filter(people, isMale));
 // Fri Feb 10 2023 00:02:59 GMT+0300 (Москва, стандартное время)
 // 30 секунд прошло*/
 
- 
+function printCurrentDate() {
+	const currentDate = new Date();
+	console.log(currentDate);
+}
 
+let secondsPassed = 0;
+const interval = 3000; // Интервал в миллисекундах (3 секунды)
+const totalTime = 30000; // Общее время выполнения в миллисекундах (30 секунд)
+const timerId = setInterval(function () {
+	printCurrentDate();
+	secondsPassed += interval / 1000; // Увеличиваем счетчик секунд
+	if (secondsPassed >= totalTime / 1000) {
+			clearInterval(timerId); // Останавливаем интервал после 30 секунд
+			console.log("30 секунд прошло");
+	}
+}, interval);
 
 
 
