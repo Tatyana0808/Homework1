@@ -229,11 +229,16 @@ function gameStart() {
     alert(gameArr);
     questionFristEl = prompt('Чему равнялся первый элемент массива?');
     questionLastEl = prompt('Чему равнялся последний элемент массива?');
+        
+        if (gameArr === null ) {
+          alert('Вы ответили неверно.');
 
-        if (gameArr[0].toLowerCase() === questionFristEl.toLowerCase() && gameArr[6].toLowerCase() === questionLastEl.toLowerCase()) {
+        } else if (gameArr[0].toLowerCase() === questionFristEl.toLowerCase() && gameArr[6].toLowerCase() === questionLastEl.toLowerCase()) {
             alert('Поздравляем! Вы угадали все верно.');
-        } else if ((gameArr[0].toLowerCase() !== (questionFristEl.toLowerCase()) && gameArr[6].toLowerCase() !== questionLastEl.toLowerCase())) {
+        } else if ((gameArr[0].toLowerCase() !== questionFristEl.toLowerCase() && gameArr[6].toLowerCase() !== questionLastEl.toLowerCase())) {
             alert('Вы ответили неверно.');
+        
+
         } else {
             alert('Вы были близки к победе!');
         }
