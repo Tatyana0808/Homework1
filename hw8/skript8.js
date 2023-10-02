@@ -19,6 +19,7 @@ const people = [
 //  { name: 'Глеб', age: 29 },
 //  { name: 'Оксана', age: 47 }
 // ]
+
 const peopleOne = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
@@ -33,12 +34,6 @@ const peopleOne = [
 
 peopleOne.sort(compareAge);
 console.log(peopleOne.sort());
-
-
-
-
-
-
 
 
 
@@ -116,15 +111,6 @@ console.log(filter(people, isMale));
 
 
 
-
-
-
-
-
-
-
-
-
 /*Задание 3
 Напишите программу, которая на протяжении 30 секунд каждые 3 секунды будет выводить в консоль текущую дату. Последней строкой должно выводиться сообщение «30 секунд прошло».
 
@@ -159,14 +145,6 @@ const timerId = setInterval(function () {
 			console.log("30 секунд прошло");
 	}
 }, interval);
-
-
-
-
-
-
-
-
 
 
 
@@ -231,6 +209,7 @@ function sayHi (name) {
 
 // Нужно изменить код ниже:
 delayForSecond(sayHi('Глеб'))*/
+
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
